@@ -9,8 +9,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.paulcager.nfcswitch.Status">
 
+
+    <Switch
+        android:id="@+id/Bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:text="Bluetooth"
+        />
+
+    <Switch
+        android:id="@+id/WiFi"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:layout_below="@id/Bluetooth"
+        android:text="Wi-Fi"
+        />
+
+    <Switch
+        android:id="@+id/Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WiFi"
+        android:text="Phone"
+        />
+
     <TextView
+        android:id="@+id/AutocallLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_below="@id/Phone"
+        android:text="WWWWWWWWWWWWWWWWWWWW"
+        />
+    <EditText
+        android:id="@+id/AutoCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_below="@id/Phone"
+        android:layout_toRightOf="@id/AutocallLabel"
+        />
+
+
 </RelativeLayout>
